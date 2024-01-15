@@ -62,14 +62,31 @@
                         </div>
     
                         <!--IL BANNER CON LE NOTIFICHE-->
-                        <div class="notification-banner">
-    
+                        <div class="notification-banner p-1">
+
+                            <div class="d-inline-block bell text-center p-3">
+                                <i class="fa-regular fa-bell-slash"></i>
+                            </div>
+                            <span>
+                                Ricevi notifiche di nuovi messaggi
+                            </span>
+                            <a href="mm">Attiva notifiche dektop</a>
+                            
                         </div>
     
-                        <div class="searchbar">
-    
+                        <!--BANNER DI RICERCA A SINISTRA-->
+                        <div class="searchbar d-flex">
+                            
+                            <div class="col-2 text-center bg-transparent">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            
+                            <div class="col-10 bg-transparent">
+                                <span class="placeholder col-12 placeholder-lg"></span>
+                            </div>
                         </div>
-    
+
+                        <!--I VARI ACCOUNT-->
                         <div class="accounts">
     
                         </div>
@@ -79,6 +96,51 @@
                     <!--parte destra di boolzapp-->
                     <div class="rightsection red col-7">
 
+                        <!--PROFILO DI CHI TI STA MESSAGGIANDO-->
+                        <div class="header-right d-flex justify-content-between">
+                            <div class="header-right-sx">
+                                <div class="photo-name">
+                                    <span class="photo">
+                                        <img src="img/avatar_io.jpg" alt="Sofia">
+                                    </span>
+                                    <span class="name">
+                                        Sofia
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="header-right-dx">
+                                ciao
+                            </div>
+                        </div>
+
+                        <!--PARTE CENTRALE-->
+                        <div class="center p-2">
+                                <div class="message-green d-block mt-2 text-end bg-success" 
+                                v-for="contact in contacts">
+                                    {{ message }}
+                                </div>
+                                <div class="message-white bg-light text-black d-block mt-2"
+                                v-for="contact in contacts">
+                                    {{ message }}
+                                </div>
+                        </div>
+
+                        <!--BARRA MESSAGGI ECC-->
+                        <div class="footer-right d-flex justify-content-between">
+                            <div class="emoji">
+                                <button>
+                                    emoji
+                                </button>
+                            </div>
+                            <div class="message-bar">
+                                barra dei messaggi
+                            </div>
+                            <div class="audio">
+                                <button>
+                                    audio
+                                </button>
+                            </div>
+                        </div>
                     </div>
     
                 </div>

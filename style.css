@@ -25,6 +25,10 @@
     min-height: 500px;
 }
 
+.header-left{
+    height: 10vh;
+}
+
 .photo > *{
     border-radius: 50%;
     height: 55px;
@@ -32,8 +36,53 @@
     margin: 0.6rem;
 }
 
+.notification-banner{
+    background-color: aqua;
+    color: black;
+    height: 10vh;
+}
+
+.notification-banner > * {
+    color: black;
+}
+
+.bell{
+    border-radius: 50%;
+    height: 55px;
+    aspect-ratio: 1;
+    margin: 0.6rem;
+    background-color: white;
+}
+
+.bell > *{
+    color: aqua;
+}
+
+.searchbar {
+    height: 10vh;
+}
+
+.center {
+    background-image: url("/img/mine.jpg");
+    min-height: 60vh;
+}
+
+.message-green{
+    width: 40%;
+}
+
+.text-message-green{
+
+}
+
+.message-white{
+    width: 30%;
+}
+
+/*DEBUG*/
 .blu{
     background-color: blue;
+    height: 90vh;
 }
 
 .red{
