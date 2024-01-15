@@ -6,4 +6,36 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    color: white;
+}
+
+/*generale*/
+
+.macro-contenitore {
+    padding: 50px;
+    background-color: green;
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+}
+
+/* PARTE SINISTRA */
+
+.leftsection{
+    min-height: 500px;
+}
+
+.photo > *{
+    border-radius: 50%;
+    height: 55px;
+    aspect-ratio: 1;
+    margin: 0.6rem;
+}
+
+.blu{
+    background-color: blue;
+}
+
+.red{
+    background-color: red;
 }
